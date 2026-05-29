@@ -13,4 +13,4 @@ node -e "..."  # see git history of this repo
 
 DeMotion processes Live Photo and Motion Photo files entirely on-device — nothing is uploaded.
 
-Contact: maciek.sieminski@gmail.com
+Contact: mail@macsiem.dev
