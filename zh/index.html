@@ -51,7 +51,7 @@
     </div>
 
 <h1>隐私政策 — DeMotion</h1>
-<p>最近更新：2026-05-06 · 生效日期：2026-05-06</p>
+<p>最近更新：2026-05-25 · 生效日期：2026-05-25</p>
 <h2>1. 我们是谁</h2>
 <p><strong>DeMotion</strong> 是一款移动应用程序，它能将您设备照片库中现有照片的 <strong>Live Photo (iOS) 和 Motion Photo (Android) 视频组件</strong>移除 — 在原地进行，并保留所有元数据。隐私是其核心原则：本应用程序<strong>完全在您的设备上运行</strong>，不上传云端，不进行分析，不使用 Sentry，也无任何追踪 — 仅严格要求本地 PhotoKit / MediaStore 访问权限以执行转换。</p>
 <p><strong>数据控制者：</strong> Maciej Siemiński（波兰独资企业）— DeMotion 的开发者。 <strong>联系方式：</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
@@ -66,8 +66,8 @@
 <li>新手引导完成标志，</li>
 <li>最近批量转换的简短历史元数据：项目数量、日期、节省的总字节数（不包含每个照片的标识符、缩略图或文件内容）。</li>
 </ul>
-<h3>3.3 无诊断 SDK</h3>
-<p>DeMotion <strong>不</strong>集成 Sentry、Firebase Crashlytics、Bugsnag 或任何第三方分析/崩溃 SDK。我们可能收到的崩溃报告仅来自 Apple App Store Connect (Crashes) 和 Google Play Console (Android Vitals)，在平台层面以与应用程序版本相关的匿名聚合崩溃数据形式提供 — 绝不与特定用户关联。</p>
+<h3>3.3 诊断 SDK（Sentry）</h3>
+<p>DeMotion 集成了 <strong>Sentry</strong>（Sentry GmbH，德国；服务器位于欧盟）用于崩溃和错误报告。Sentry 接收的内容：错误堆栈跟踪和异常消息、导航 breadcrumbs（用户在错误之前访问的屏幕）、应用版本、构建号、操作系统版本、设备型号和区域设置。Sentry <strong>从不</strong>接收：照片内容、照片文件路径、照片标识符、您的姓名、电子邮件、联系人、超出国家/区域设置的位置信息，或任何可以追溯到您的标识符。我们仅将其用于查找和修复错误。数据保留期：90 天（Sentry 默认值）。法律依据：合法利益（GDPR 第 6 条第 1 款 f 项）— 维护应用稳定性。我们<strong>不</strong>集成 Firebase Crashlytics、Bugsnag 或其他诊断 SDK。Apple App Store Connect (Crashes) 和 Google Play Console (Android Vitals) 也以平台级别接收与应用版本相关联的匿名化聚合崩溃数据 — 独立于 Sentry，受 Apple/Google 管辖。</p>
 <h3>3.4 广告 (AdMob)</h3>
 <p>DeMotion 在主页和结果页显示非侵入式广告（横幅），并在每 N 次批量处理后显示插页式广告（仅限免费层级）。广告由 <strong>Google AdMob</strong> 提供，其 SDK 收集：</p>
 <ul>

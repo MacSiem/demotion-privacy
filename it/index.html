@@ -51,13 +51,13 @@
     </div>
 
 <h1>Informativa sulla Privacy — DeMotion</h1>
-<p>Ultimo aggiornamento: 2026-05-06 · Data di entrata in vigore: 2026-05-06</p>
+<p>Ultimo aggiornamento: 2026-05-25 · Data di entrata in vigore: 2026-05-25</p>
 <h2>1. Chi siamo</h2>
-<p><strong>DeMotion</strong> è un'applicazione mobile che <strong>rimuove i componenti video di Live Photo (iOS) e Motion Photo (Android)</strong> dalle foto esistenti nella libreria fotografica del tuo dispositivo — sul posto, con tutti i metadati preservati. La privacy è fondamentale: l'app funziona <strong>interamente sul tuo dispositivo</strong> senza caricamento su cloud, senza analisi, senza Sentry e senza tracciamento — solo con l'accesso locale a PhotoKit / MediaStore strettamente necessario per eseguire la conversione.</p>
+<p><strong>DeMotion</strong> è un'applicazione mobile che <strong>rimuove i componenti video di Live Photo (iOS) e Motion Photo (Android)</strong> dalle foto esistenti nella libreria fotografica del tuo dispositivo — sul posto, con tutti i metadati preservati. La privacy è fondamentale: l'app funziona <strong>interamente sul tuo dispositivo</strong> senza caricamento su cloud, senza analisi di marketing e senza tracciamento utente. Usiamo Sentry per il reporting tecnico degli errori (stack trace, breadcrumb di navigazione, versione OS) — mai contenuti fotografici, mai identificatori utente — per correggere rapidamente i bug — solo con l'accesso locale a PhotoKit / MediaStore strettamente necessario per eseguire la conversione.</p>
 <p><strong>Titolare del trattamento dei dati:</strong> Maciej Siemiński (ditta individuale, Polonia) — lo sviluppatore di DeMotion. <strong>Contatto:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>Questa Informativa sulla Privacy spiega quali dati personali DeMotion tratta, come, perché e quali diritti hai.</p>
 <h2>2. Riepilogo in linguaggio semplice</h2>
-<p>DeMotion funziona interamente sul tuo dispositivo — le tue foto non lasciano mai il tuo telefono, non c'è cloud, né analisi, né Sentry, né tracciamento. Utilizziamo Google AdMob per gli annunci nel livello gratuito e la fatturazione Apple / Google per gli acquisti in-app. Hai tutti i diritti GDPR, inclusi accesso, cancellazione e portabilità.</p>
+<p>DeMotion funziona interamente sul tuo dispositivo — le tue foto non lasciano mai il tuo telefono, non c è cloud, né analisi di marketing, né tracciamento utente. Usiamo Sentry per il reporting tecnico degli errori (solo log di errori, nessuna foto, nessun identificatore utente) per correggere rapidamente i bug. Utilizziamo Google AdMob per gli annunci nel livello gratuito e la fatturazione Apple / Google per gli acquisti in-app. Hai tutti i diritti GDPR, inclusi accesso, cancellazione e portabilità.</p>
 <h2>3. Dati che trattiamo</h2>
 <h3>3.1 Dati solo locali</h3>
 <p>L'app memorizza localmente sul tuo dispositivo:</p>
@@ -66,8 +66,8 @@
 <li>flag di completamento dell'onboarding,</li>
 <li>una breve cronologia delle recenti conversioni batch come metadati: numero di elementi, data, byte totali salvati (nessun identificatore per foto, nessuna miniatura, nessun contenuto del file).</li>
 </ul>
-<h3>3.3 Nessun SDK diagnostico</h3>
-<p>DeMotion <strong>non</strong> integra Sentry, Firebase Crashlytics, Bugsnag o qualsiasi SDK di analisi/crash di terze parti. I rapporti sugli arresti anomali che potremmo ricevere provengono solo da Apple App Store Connect (Crashes) e Google Play Console (Android Vitals), a livello di piattaforma, sotto forma di dati aggregati e anonimi sugli arresti anomali legati alla versione dell'app — mai a un utente specifico.</p>
+<h3>3.3 SDK diagnostico (Sentry)</h3>
+<p>DeMotion integra <strong>Sentry</strong> (Sentry GmbH, Germania; server in UE) per i rapporti di arresti anomali ed errori. Sentry riceve: stack trace degli errori e messaggi di eccezione, breadcrumb di navigazione (quali schermate l'utente ha visitato prima dell'errore), versione dell'app, build, versione OS, modello del dispositivo e locale. Sentry <strong>non</strong> riceve mai: contenuto delle foto, percorsi dei file delle foto, identificatori delle foto, il suo nome, la sua email, i suoi contatti, la sua posizione oltre paese/locale, né alcun identificatore che possa risalire a lei. Usiamo questo solo per trovare e correggere i bug. Conservazione dati: 90 giorni (predefinito Sentry). Base giuridica: legittimo interesse (art. 6 par. 1 lett. f GDPR) per mantenere la stabilità dell'app. <strong>Non</strong> integriamo Firebase Crashlytics, Bugsnag o altri SDK diagnostici. Apple App Store Connect (Crashes) e Google Play Console (Android Vitals) ricevono inoltre dati anonimi aggregati di arresti anomali a livello di piattaforma legati alla versione dell'app — separatamente da Sentry, secondo Apple/Google.</p>
 <h3>3.4 Pubblicità (AdMob)</h3>
 <p>DeMotion mostra annunci non invasivi su Home e Risultato (banner) più un interstitial dopo ogni N batch (solo nel livello gratuito). Gli annunci sono forniti da <strong>Google AdMob</strong>, il cui SDK raccoglie:</p>
 <ul>
