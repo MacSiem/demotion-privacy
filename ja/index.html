@@ -71,11 +71,11 @@
 <p>DeMotion はクラッシュおよびエラー報告のために <strong>Sentry</strong>（Sentry GmbH、ドイツ、EU 内のサーバー）を統合しています。Sentry が受け取るデータ：エラーのスタックトレースおよび例外メッセージ、ナビゲーションのブレッドクラム（ユーザーがエラー前に訪れた画面）、アプリのバージョン、ビルド番号、OS バージョン、デバイスモデル、ロケール。Sentry が<strong>決して受け取らないもの</strong>：写真の内容、写真のファイルパス、写真の識別子、お客様の名前、メール、連絡先、国/ロケールを超える位置情報、お客様に紐付け可能ないかなる識別子。これらはバグの発見および修正のためにのみ使用します。データ保持期間：90日（Sentry の既定値）。法的根拠：正当な利益（GDPR 第6条1項f号）— アプリの安定性維持のため。Firebase Crashlytics、Bugsnag その他の診断 SDK は<strong>統合していません</strong>。Apple App Store Connect（Crashes）および Google Play Console（Android Vitals）もプラットフォームレベルで、アプリのバージョンに紐付けられた匿名化された集計クラッシュデータを受け取ります — Sentry とは独立し、Apple/Google の規約に従います。</p>
 <h3>3.4 広告 (AdMob)</h3>
 <p>DeMotionは、ホーム画面と結果画面に（バナー）非侵襲型広告を表示し、Nバッチごとにインタースティシャル広告を表示します（無料版のみ）。広告は<strong>Google AdMob</strong>によって配信され、そのSDKは以下を収集します。</p>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <ul>
 <li><strong>広告ID</strong>（Android Advertising ID / Apple IDFA）。Googleと共有され、広告の配信に使用されます。</li>
 <li>診断データ（デバイスモデル、国レベルの位置情報、言語）。</li>
 </ul>
+<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>デフォルトモードは<strong>パーソナライズされていない広告</strong>です。Androidでは、システム設定で広告IDを管理できます。Lifetime / Premium IAPを通じて広告を永続的に無効にすることができます。</p>
 <h3>3.5 アプリ内課金 (IAP)</h3>
 <p>DeMotionは、Apple In-App Purchase (iOS) および Google Play Billing (Android) を通じて有料機能を提供しています。購入を行う際:</p>
