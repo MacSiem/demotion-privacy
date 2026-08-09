@@ -58,7 +58,7 @@
 <p>Pour la version de l'application distribuée via Google Play, le responsable du traitement des données est LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Cette Politique de Confidentialité explique quelles données personnelles DeMotion traite, comment, pourquoi, et quels sont vos droits.</p>
 <h2>2. Résumé en langage clair</h2>
-<p>DeMotion s'exécute entièrement sur votre appareil — vos photos ne quittent jamais votre téléphone, il n'y a pas de cloud, pas d'analyses, pas de Sentry et pas de suivi. Nous utilisons Google AdMob pour les publicités dans la version gratuite et la facturation Apple / Google pour les achats intégrés. Vous disposez de tous les droits RGPD, y compris l'accès, la suppression et la portabilité.</p>
+<p>DeMotion s'exécute entièrement sur votre appareil — vos photos ne quittent jamais votre téléphone, il n'y a pas de cloud, pas d'analyses, pas de Sentry et pas de suivi. Nous utilisons Unity Ads pour les publicités dans la version gratuite et la facturation Apple / Google pour les achats intégrés. Vous disposez de tous les droits RGPD, y compris l'accès, la suppression et la portabilité.</p>
 <h2>3. Données que nous traitons</h2>
 <h3>3.1 Données uniquement locales</h3>
 <p>L'application stocke localement sur votre appareil :</p>
@@ -69,13 +69,12 @@
 </ul>
 <h3>3.3 SDK de diagnostic (Sentry)</h3>
 <p>DeMotion intègre <strong>Sentry</strong> (Sentry GmbH, Allemagne ; serveurs dans l'UE) pour les rapports de crash et d'erreurs. Sentry reçoit : les stack traces d'erreurs et les messages d'exception, les breadcrumbs de navigation (quels écrans l'utilisateur a visités avant l'erreur), la version de l'application, le numéro de build, la version de l'OS, le modèle d'appareil et la locale. Sentry ne reçoit <strong>jamais</strong> : le contenu des photos, les chemins de fichiers photo, les identifiants de photos, votre nom, votre e-mail, vos contacts, votre localisation au-delà du pays/locale, ni aucun identifiant pouvant remonter à vous. Nous utilisons ceci uniquement pour trouver et corriger les bugs. Rétention des données : 90 jours (par défaut Sentry). Base légale : intérêt légitime (art. 6 § 1 f RGPD) pour maintenir la stabilité de l'application. Nous <strong>n'intégrons pas</strong> Firebase Crashlytics, Bugsnag ou d'autres SDK de diagnostic. Apple App Store Connect (Crashes) et Google Play Console (Android Vitals) reçoivent également au niveau plateforme des données de crash anonymisées et agrégées liées à la version de l'application — séparément de Sentry, selon Apple/Google.</p>
-<h3>3.4 Publicité (AdMob)</h3>
-<p>DeMotion affiche des publicités non-invasives sur l'écran d'accueil et de résultats (bannière) ainsi qu'une interstitielle après chaque N lots (version gratuite uniquement). Les publicités sont diffusées par <strong>Google AdMob</strong>, dont le SDK collecte :</p>
+<h3>3.4 Publicité (Unity Ads)</h3>
+<p>DeMotion affiche des publicités non-invasives sur l'écran d'accueil et de résultats (bannière) ainsi qu'une interstitielle après chaque N lots (version gratuite uniquement). Les publicités sont diffusées par <strong>Unity Ads</strong>, dont le SDK collecte :</p>
 <ul>
 <li>l'<strong>ID Publicitaire</strong> (ID Publicitaire Android / IDFA Apple), partagé avec Google pour diffuser des publicités ;</li>
 <li>des données de diagnostic (modèle d'appareil, localisation au niveau du pays, langue).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Le mode par défaut est les <strong>publicités non personnalisées</strong>. Sur Android, vous contrôlez l'ID Publicitaire dans les Paramètres système. Les publicités peuvent être désactivées de manière permanente via l'achat intégré Lifetime / Premium.</p>
 <h3>3.5 Achats intégrés (IAP)</h3>
 <p>DeMotion propose des fonctionnalités payantes via l'achat intégré Apple (iOS) et la facturation Google Play (Android). Lorsque vous effectuez un achat :</p>
@@ -102,7 +101,7 @@
 <h2>4. Pourquoi nous traitons ces données (finalités)</h2>
 <ul>
 <li><strong>Exécuter l'application sur votre appareil</strong> — le stockage local et (le cas échéant) le chiffrement permettent à vos données de persister entre les sessions.</li>
-<li><strong>Soutenir la version gratuite</strong> — AdMob diffuse des publicités non-invasives pour financer les utilisateurs qui n'achètent pas la version premium.</li>
+<li><strong>Soutenir la version gratuite</strong> — Unity Ads diffuse des publicités non-invasives pour financer les utilisateurs qui n'achètent pas la version premium.</li>
 <li><strong>Traiter les achats</strong> — la facturation Apple / Google permet de satisfaire les droits premium que vous choisissez d'acheter.</li>
 </ul>
 <h2>5. Base juridique (Art. 6 RGPD)</h2>
@@ -118,8 +117,6 @@
 <table>
 <thead><tr><th>Destinataire</th><th>Finalité</th><th>Catégorie de données</th><th>Politique de confidentialité</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Diffuser des publicités</td><td>ID Publicitaire, métriques d'appareil et de publicité</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Diffuser des publicités</td><td>ID Publicitaire, métriques d'appareil et de publicité</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Diffuser des publicités</td><td>ID Publicitaire, métriques d'appareil et de publicité</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Traitement des achats intégrés sur iOS</td><td>Jeton d'achat, droits au niveau du compte</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Traitement des achats intégrés sur Android</td><td>Jeton d'achat, droits au niveau du compte</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
@@ -138,7 +135,7 @@
 <thead><tr><th>Données</th><th>Où elles sont stockées</th><th>Durée</th></tr></thead>
 <tbody>
 <tr><td>Vos données dans l'application</td><td>Uniquement sur votre appareil</td><td>Jusqu'à ce que vous les supprimiez, désinstalliez l'application ou effaciez les données de l'application</td></tr>
-<tr><td>ID Publicitaire</td><td>Systèmes Google AdMob</td><td>Conformément à la politique de conservation de Google (généralement jusqu'à 14 mois pour les métriques publicitaires)</td></tr>
+<tr><td>ID Publicitaire</td><td>Systèmes Unity Ads</td><td>Conformément à la politique de conservation de Unity</td></tr>
 <tr><td>Jeton / reçu d'achat IAP</td><td>Votre appareil + Apple / Google</td><td>Jusqu'à la désinstallation ; Apple / Google conservent les enregistrements de transaction conformément à leurs propres politiques</td></tr>
 </tbody></table>
 <h2>9. Vos droits (Art. 15-22 RGPD)</h2>
@@ -169,7 +166,7 @@
 </ul>
 <p>Aucun système n'est sécurisé à 100 % ; veuillez maintenir votre appareil à jour et utiliser des verrous d'appareil robustes.</p>
 <h2>13. ID Publicitaire et suivi</h2>
-<p>DeMotion n'appelle <strong>pas</strong> le cadre App Tracking Transparency sur iOS — il n'y a pas de collecte d'identifiant de niveau suivi par l'application. AdMob, lorsqu'il est présent, fonctionne en mode non personnalisé.</p>
+<p>DeMotion n'appelle <strong>pas</strong> le cadre App Tracking Transparency sur iOS — il n'y a pas de collecte d'identifiant de niveau suivi par l'application. Unity Ads, lorsqu'il est présent, fonctionne en mode non personnalisé.</p>
 <p>Sur Android, vous pouvez réinitialiser ou limiter votre ID Publicitaire sous <strong>Paramètres → Google → Annonces</strong>.</p>
 <h2>14. Achats intégrés</h2>
 <p>DeMotion propose les produits intégrés suivants via l'Apple App Store et Google Play : abonnement annuel premium, déverrouillage à vie, pot de pourboires facultatif.</p>

@@ -58,7 +58,7 @@
 <p>Para a versão do aplicativo distribuída via Google Play, o controlador de dados é LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Esta Política de Privacidade explica quais dados pessoais o DeMotion processa, como, por que e quais direitos você tem.</p>
 <h2>2. Resumo em linguagem simples</h2>
-<p>O DeMotion é executado inteiramente no seu dispositivo — suas fotos nunca saem do seu telefone, não há nuvem, análises, Sentry ou rastreamento. Usamos o Google AdMob para anúncios na versão gratuita e o faturamento da Apple / Google para compras dentro do aplicativo. Você tem todos os direitos do RGPD, incluindo acesso, exclusão e portabilidade.</p>
+<p>O DeMotion é executado inteiramente no seu dispositivo — suas fotos nunca saem do seu telefone, não há nuvem, análises, Sentry ou rastreamento. Usamos o Unity Ads para anúncios na versão gratuita e o faturamento da Apple / Google para compras dentro do aplicativo. Você tem todos os direitos do RGPD, incluindo acesso, exclusão e portabilidade.</p>
 <h2>3. Dados que processamos</h2>
 <h3>3.1 Dados apenas locais</h3>
 <p>O aplicativo armazena localmente no seu dispositivo:</p>
@@ -69,13 +69,12 @@
 </ul>
 <h3>3.3 SDK de diagnóstico (Sentry)</h3>
 <p>O DeMotion integra o <strong>Sentry</strong> (Sentry GmbH, Alemanha; servidores na UE) para relatórios de falhas e erros. O Sentry recebe: stack traces de erros e mensagens de exceção, breadcrumbs de navegação (quais telas o usuário visitou antes do erro), versão do aplicativo, número do build, versão do SO, modelo do dispositivo e locale. O Sentry <strong>nunca</strong> recebe: conteúdo de fotos, caminhos de arquivos de fotos, identificadores de fotos, seu nome, seu e-mail, seus contatos, sua localização além de país/locale, ou qualquer identificador que possa ser vinculado a você. Usamos isto apenas para encontrar e corrigir bugs. Retenção de dados: 90 dias (padrão Sentry). Base legal: interesse legítimo (art. 6, 1, f do RGPD) para manter a estabilidade do aplicativo. <strong>Não</strong> integramos Firebase Crashlytics, Bugsnag ou outros SDKs de diagnóstico. Apple App Store Connect (Crashes) e Google Play Console (Android Vitals) também recebem dados de falhas agregados anonimizados ligados à versão do aplicativo a nível de plataforma — separadamente do Sentry, conforme Apple/Google.</p>
-<h3>3.4 Publicidade (AdMob)</h3>
-<p>O DeMotion exibe anúncios não invasivos nas telas Inicial e Resultado (banner) mais intersticiais após cada N lotes (apenas na versão gratuita). Os anúncios são entregues pelo <strong>Google AdMob</strong>, cujo SDK coleta:</p>
+<h3>3.4 Publicidade (Unity Ads)</h3>
+<p>O DeMotion exibe anúncios não invasivos nas telas Inicial e Resultado (banner) mais intersticiais após cada N lotes (apenas na versão gratuita). Os anúncios são entregues pelo <strong>Unity Ads</strong>, cujo SDK coleta:</p>
 <ul>
 <li>o <strong>ID de Publicidade</strong> (ID de Publicidade do Android / Apple IDFA), compartilhado com o Google para exibir anúncios;</li>
 <li>dados de diagnóstico (modelo do dispositivo, localização em nível de país, idioma).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>O modo padrão é <strong>anúncios não personalizados</strong>. No Android, você controla o ID de Publicidade nas Configurações do sistema. Os anúncios podem ser desativados permanentemente através da Compra no aplicativo (IAP) Vitalícia / Premium.</p>
 <h3>3.5 Compras no aplicativo (IAP)</h3>
 <p>O DeMotion oferece recursos pagos através da Compra no Aplicativo da Apple (iOS) e do Google Play Billing (Android). Ao fazer uma compra:</p>
@@ -102,7 +101,7 @@
 <h2>4. Por que processamos esses dados (finalidades)</h2>
 <ul>
 <li><strong>Executar o aplicativo no seu dispositivo</strong> — o armazenamento local e (quando presente) a criptografia permitem que seus dados persistam entre as sessões.</li>
-<li><strong>Sustentar a versão gratuita</strong> — o AdMob entrega anúncios não invasivos para financiar usuários que não compram a versão premium.</li>
+<li><strong>Sustentar a versão gratuita</strong> — o Unity Ads entrega anúncios não invasivos para financiar usuários que não compram a versão premium.</li>
 <li><strong>Processar compras</strong> — o faturamento da Apple / Google atende aos direitos premium que você escolhe comprar.</li>
 </ul>
 <h2>5. Base legal (Art. 6 RGPD)</h2>
@@ -118,8 +117,6 @@
 <table>
 <thead><tr><th>Destinatário</th><th>Finalidade</th><th>Categoria de dados</th><th>Política de privacidade</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Exibir anúncios</td><td>ID de Publicidade, métricas de dispositivo e anúncio</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Exibir anúncios</td><td>ID de Publicidade, métricas de dispositivo e anúncio</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Exibir anúncios</td><td>ID de Publicidade, métricas de dispositivo e anúncio</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Processamento de compras no aplicativo no iOS</td><td>Token de compra, direito em nível de conta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Processamento de compras no aplicativo no Android</td><td>Token de compra, direito em nível de conta</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
@@ -138,7 +135,7 @@
 <thead><tr><th>Dados</th><th>Onde reside</th><th>Por quanto tempo</th></tr></thead>
 <tbody>
 <tr><td>Seus dados no aplicativo</td><td>Apenas no seu dispositivo</td><td>Até você excluí-los, desinstalar o aplicativo ou limpar os dados do aplicativo</td></tr>
-<tr><td>ID de Publicidade</td><td>Sistemas do Google AdMob</td><td>Conforme a política de retenção do Google (geralmente até 14 meses para métricas de anúncios)</td></tr>
+<tr><td>ID de Publicidade</td><td>Sistemas do Unity Ads</td><td>Conforme a política de retenção do Unity</td></tr>
 <tr><td>Token de compra / recibo IAP</td><td>Seu dispositivo + Apple / Google</td><td>Até você desinstalar; Apple / Google mantêm registros de transação conforme suas próprias políticas</td></tr>
 </tbody></table>
 <h2>9. Seus direitos (Art. 15–22 RGPD)</h2>
@@ -169,7 +166,7 @@
 </ul>
 <p>Nenhum sistema é 100% seguro; por favor, mantenha seu dispositivo atualizado e use bloqueios de dispositivo fortes.</p>
 <h2>13. ID de Publicidade e rastreamento</h2>
-<p>O DeMotion <strong>não</strong> chama o framework App Tracking Transparency no iOS — não há coleta de identificadores de nível de rastreamento pelo aplicativo. O AdMob, quando presente, é executado no modo não personalizado.</p>
+<p>O DeMotion <strong>não</strong> chama o framework App Tracking Transparency no iOS — não há coleta de identificadores de nível de rastreamento pelo aplicativo. O Unity Ads, quando presente, é executado no modo não personalizado.</p>
 <p>No Android, você pode redefinir ou limitar seu ID de Publicidade em <strong>Configurações → Google → Anúncios</strong>.</p>
 <h2>14. Compras no aplicativo</h2>
 <p>O DeMotion oferece os seguintes produtos no aplicativo através da Apple App Store e Google Play: assinatura anual premium, desbloqueio vitalício, gorjeta opcional.</p>
