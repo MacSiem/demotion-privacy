@@ -50,135 +50,28 @@
 <a href="../de/">Deutsch</a> · <a href="../en/">English</a> · <a href="../es/">Español</a> · <a href="../fr/">Français</a> · <a href="../it/">Italiano</a> · <a class="active">日本語</a> · <a href="../ko/">한국어</a> · <a href="../pl/">Polski</a> · <a href="../pt/">Português (BR)</a> · <a href="../zh/">简体中文</a>
     </div>
 
-<h1>プライバシーポリシー — DeMotion</h1>
-<p>最終更新日: 2026-05-25 · 発効日: 2026-05-25</p>
-<h2>1. 当社について</h2>
-<p><strong>DeMotion</strong>は、お使いのデバイスのフォトライブラリにある既存の写真から<strong>Live Photo (iOS) および Motion Photo (Android) の動画コンポーネントを削除する</strong>モバイルアプリです — その場で、すべてのメタデータを保持します。プライバシーは不可欠です：アプリは<strong>完全にデバイス上で動作し</strong>、クラウドへのアップロード、マーケティング分析、ユーザートラッキングは一切行いません。技術的なクラッシュ報告のために Sentry を使用しています（スタックトレース、ナビゲーションのブレッドクラム、OSバージョン）— 写真の内容やユーザー識別子は決して送信しません — バグを迅速に修正するため — 変換を実行するために厳密に必要とされるローカルのPhotoKit / MediaStoreアクセスのみです。</p>
-<p><strong>データ管理者:</strong> Maciej Siemiński — DeMotionの開発者。 <strong>連絡先:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Google Play経由で配信されるアプリのバージョンについては、データ管理者はLICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polskaです。</p>
-<p>このプライバシーポリシーは、DeMotionがどのような個人データをどのように、なぜ処理するのか、そしてお客様がどのような権利を持つのかを説明します。</p>
-<h2>2. 平易な言葉での要約</h2>
-<p>DeMotionは完全にデバイス上で動作します — お客様の写真は決して携帯電話を離れることはなく、クラウド、マーケティング分析、ユーザートラッキングは一切ありません。技術的なエラー報告のために Sentry を使用しています（エラーログのみ、写真なし、ユーザー識別子なし）— バグを迅速に修正するため。無料版ではUnity Adsを広告に、アプリ内課金にはApple / Googleの請求システムを使用しています。お客様はアクセス、削除、データポータビリティを含む完全なGDPRの権利を持っています。</p>
-<h2>3. 当社が処理するデータ</h2>
-<h3>3.1 デバイス内のみのデータ</h3>
-<p>アプリはデバイスのローカルに以下を保存します。</p>
-<ul>
-<li>ユーザー設定（テーマ、言語、プレミアム利用資格の状態）</li>
-<li>オンボーディング完了フラグ</li>
-<li>最近のバッチ変換の短い履歴（メタデータとして）：アイテム数、日付、保存された合計バイト数（写真ごとの識別子、サムネイル、ファイルの内容は含みません）</li>
-</ul>
-<h3>3.3 診断SDK（Sentry）</h3>
-<p>DeMotion はクラッシュおよびエラー報告のために <strong>Sentry</strong>（Sentry GmbH、ドイツ、EU 内のサーバー）を統合しています。Sentry が受け取るデータ：エラーのスタックトレースおよび例外メッセージ、ナビゲーションのブレッドクラム（ユーザーがエラー前に訪れた画面）、アプリのバージョン、ビルド番号、OS バージョン、デバイスモデル、ロケール。Sentry が<strong>決して受け取らないもの</strong>：写真の内容、写真のファイルパス、写真の識別子、お客様の名前、メール、連絡先、国/ロケールを超える位置情報、お客様に紐付け可能ないかなる識別子。これらはバグの発見および修正のためにのみ使用します。データ保持期間：90日（Sentry の既定値）。法的根拠：正当な利益（GDPR 第6条1項f号）— アプリの安定性維持のため。Firebase Crashlytics、Bugsnag その他の診断 SDK は<strong>統合していません</strong>。Apple App Store Connect（Crashes）および Google Play Console（Android Vitals）もプラットフォームレベルで、アプリのバージョンに紐付けられた匿名化された集計クラッシュデータを受け取ります — Sentry とは独立し、Apple/Google の規約に従います。</p>
-<h3>3.4 広告 (Unity Ads)</h3>
-<p>DeMotionは、ホーム画面と結果画面に（バナー）非侵襲型広告を表示し、Nバッチごとにインタースティシャル広告を表示します（無料版のみ）。広告は<strong>Unity Ads</strong>によって配信され、そのSDKは以下を収集します。</p>
-<ul>
-<li><strong>広告ID</strong>（Android Advertising ID / Apple IDFA）。Googleと共有され、広告の配信に使用されます。</li>
-<li>診断データ（デバイスモデル、国レベルの位置情報、言語）。</li>
-</ul>
-<p>デフォルトモードは<strong>パーソナライズされていない広告</strong>です。Androidでは、システム設定で広告IDを管理できます。Lifetime / Premium IAPを通じて広告を永続的に無効にすることができます。</p>
-<h3>3.5 アプリ内課金 (IAP)</h3>
-<p>DeMotionは、Apple In-App Purchase (iOS) および Google Play Billing (Android) を通じて有料機能を提供しています。購入を行う際:</p>
-<ul>
-<li>Apple / Google がすべてのカードおよびアカウントデータを処理します — <strong>お客様のカード番号、請求先住所、または完全なアカウント情報を当社が知ることは決してありません</strong>。</li>
-<li>Apple / Google は、DeMotionが利用資格を検証するためにローカルに保存する購入トークン / 取引レシートを返します。</li>
-<li>購入の復元は、Apple / Google から既存の利用資格を再取得します。</li>
-</ul>
-<p>利用可能な製品：プレミアム年間サブスクリプション、永久アンロック、オプションのチップジャー。</p>
-<h3>3.6 デバイス権限</h3>
-<ul>
-<li><strong>写真 / メディア</strong> (<code>READ_MEDIA_IMAGES</code> / <code>PHPhotoLibrary</code>): ギャラリーから画像を追加または処理します（アプリのコア機能に必要でない限りオプション）。</li>
-</ul>
-<p>各権限は状況に応じて要求されます。いずれかの権限を拒否しても、コア機能は引き続き使用できます（該当する場合）。</p>
-<h3>3.7 収集しないもの</h3>
-<ul>
-<li>お客様の名前、メールアドレス、電話番号、住所（アカウントは不要です）。</li>
-<li>連絡先リスト、カレンダー、SMS、通話履歴。</li>
-<li>正確な位置情報。</li>
-<li>アプリ外の閲覧履歴。</li>
-<li>生体認証データ（Face ID / Touch ID はシステムレベルのロックとしてのみ使用され、デバイスから出ることはありません）。</li>
-<li>健康、財務、または支払いカードデータ。</li>
-</ul>
-<h2>4. このデータを処理する理由（目的）</h2>
-<ul>
-<li><strong>デバイス上でアプリを実行する</strong> — ローカルストレージと（存在する場合）暗号化により、セッション間でデータが保持されます。</li>
-<li><strong>無料版を維持する</strong> — Unity Adsは非侵襲型広告を配信し、プレミアムを購入しないユーザーへの資金を提供します。</li>
-<li><strong>購入を処理する</strong> — Apple / Googleの請求システムは、お客様が購入を選択したプレミアム利用資格を満たします。</li>
-</ul>
-<h2>5. 法的根拠 (GDPR Art. 6)</h2>
-<p>欧州経済領域、英国、スイスのユーザー向け：</p>
-<ul>
-<li><strong>契約の履行</strong> (GDPR Art. 6(1)(b)) — アプリの実行、お客様の購入処理。</li>
-<li><strong>正当な利益</strong> (GDPR Art. 6(1)(f)) — 不正行為/乱用防止、パーソナライズされていない広告。当社の利益は安定性の向上と無料版の維持であり、お客様の基本的な権利を侵害するものではありません。</li>
-<li><strong>同意</strong> (GDPR Art. 6(1)(a)) — パーソナライズされた広告の場合、アプリ内設定を通じてお客様が同意を与えた場合。お客様は、以前の処理に影響を与えることなく、いつでも同意を撤回できます。</li>
-<li><strong>法的義務</strong> (GDPR Art. 6(1)(c)) — 当局からの合法的な要求に応じなければならない場合のみ。</li>
-</ul>
-<h2>6. 受領者（データ共有相手）</h2>
-<p>当社は個人データを<strong>販売しません</strong>。受領者のカテゴリは、アプリの運用に厳密に必要なプロバイダに限定されます。</p>
-<table>
-<thead><tr><th>受領者</th><th>目的</th><th>データカテゴリ</th><th>プライバシーポリシー</th></tr></thead>
-<tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>広告配信</td><td>広告ID、デバイスおよび広告メトリクス</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
-<tr><td>Apple Inc. (App Store / IAP)</td><td>iOSでのアプリ内購入処理</td><td>購入トークン、アカウントレベルの利用資格</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Play Billing)</td><td>Androidでのアプリ内購入処理</td><td>購入トークン、アカウントレベルの利用資格</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-</tbody></table>
-<p>当社は、有効な裁判所命令またはその他の拘束力のある法的手続きによって要求された場合、要求を検証し、合法である場合にはお客様に通知した上で、データを開示する場合があります。</p>
-<h2>7. 国際転送</h2>
-<p>上記の受領者の一部は、欧州経済領域外（主に米国）に所在しています。データ転送が発生する場合、それらは以下によって保護されます。</p>
-<ul>
-<li><strong>欧州委員会の十分性決定</strong>（EU-US Data Privacy Framework）に基づき、Google LLCを含むフレームワークの認定プロバイダに対して適用されます。</li>
-<li>欧州委員会が採択した<strong>標準契約条項 (SCCs)</strong>。適用される場合、追加の保護措置によって補完されます。</li>
-<li>受領者自身が公開している転送メカニズム（例：Appleの拘束的企業プライバシーコミットメント）。</li>
-</ul>
-<p>関連する保護措置のコピーは、<a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> までご連絡いただければご請求いただけます。</p>
-<h2>8. 保持</h2>
-<table>
-<thead><tr><th>データ</th><th>所在地</th><th>期間</th></tr></thead>
-<tbody>
-<tr><td>アプリ内データ</td><td>お客様のデバイスのみ</td><td>お客様が削除するか、アプリをアンインストールするか、アプリデータを消去するまで</td></tr>
-<tr><td>広告ID</td><td>Unity Ads システム</td><td>Unityの保持ポリシーに基づく</td></tr>
-<tr><td>IAP購入トークン / レシート</td><td>お客様のデバイス + Apple / Google</td><td>アンインストールするまで。Apple / Googleはそれぞれのポリシーに従い取引記録を保持します</td></tr>
-</tbody></table>
-<h2>9. お客様の権利 (GDPR Art. 15–22)</h2>
-<p>お客様は、ご自身の個人データに関して以下の権利を有します。</p>
-<ul>
-<li><strong>アクセス権 (GDPR Art. 15)</strong> — お客様のデータが処理されているかどうかの確認、およびそのコピー。お客様のデータのほとんどは既にデバイス上にあります。アプリからエクスポートするか、残りのデータについては当社にご連絡ください。</li>
-<li><strong>訂正権 (GDPR Art. 16)</strong> — 不正確なデータの訂正。アプリ内でデータを直接編集してください。</li>
-<li><strong>消去権 / 「忘れられる権利」 (GDPR Art. 17)</strong> — 設定 → 「すべてのデータを消去」またはアプリのアンインストールにより、すべてのデータを削除できます。</li>
-<li><strong>処理の制限権 (GDPR Art. 18)</strong> — 一時的な停止を要求できます。当社にご連絡ください。</li>
-<li><strong>データポータビリティの権利 (GDPR Art. 20)</strong> — 設定 → 「データのエクスポート」でJSON / Markdownバンドルが生成されます。</li>
-<li><strong>異議を唱える権利 (GDPR Art. 21)</strong> — 正当な利益に基づく処理、特にプロファイリング型の広告に異議を唱えることができます。アプリ設定またはシステムコントロールを通じてパーソナライズされた広告を無効にしてください。</li>
-<li><strong>自動化された意思決定の対象とならない権利 (GDPR Art. 22)</strong> — DeMotionは、法的または同様に重要な効果を持つ自動化された意思決定をお客様に対して行いません。</li>
-</ul>
-<p>いずれかの権利を行使するには、<a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> までご連絡ください。30日以内に返信いたします（複雑な要求の場合、通知の上で60日間延長されることがあります）。</p>
-<h2>10. 苦情を申し立てる権利 (GDPR Art. 77)</h2>
-<p>当社がお客様のデータを不法に処理していると思われる場合、監督機関に苦情を申し立てることができます。ポーランド居住者の場合：</p>
-<p><strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong> ul. Stawki 2, 00-193 Warszawa, Poland <a href="https://uodo.gov.pl">https://uodo.gov.pl</a></p>
-<p>また、お客様の常居所、勤務地、または侵害があったとされるEEA内の他の国の監督機関に苦情を申し立てることもできます。</p>
-<h2>11. 子供のプライバシー</h2>
-<p>DeMotionは<strong>13歳未満の子供を対象としていません</strong>（現地法により該当する場合は16歳未満）。当社は、この年齢未満の子供から意図的に個人データを収集することはありません。子供が親の同意なしに当社に個人データを提供したと思われる場合は、<a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> までご連絡ください。速やかに削除いたします。</p>
-<p>DeMotionでは、「Designed for Families」 / 「Ages 5+」のApple / Googleのフラグは<strong>設定されていません</strong> — アプリは13歳以上の一般向けと評価されています。</p>
-<h2>12. セキュリティ</h2>
-<ul>
-<li><strong>その場での編集のみ</strong> — DeMotionは、PhotoKit (iOS) / MediaStore (Android) APIを介して、既存の写真をその場で修正します。元の資産識別子、キャプチャ日時、位置情報、EXIF、アルバムのメンバーシップ、およびiCloud同期状態は保持されます。</li>
-<li><strong>アップロードなし、コピーなし</strong> — お客様の写真コンテンツがデバイスを離れることはありません。クラウド、バックアップ、アナリティクスはありません。</li>
-<li><strong>転送セキュリティ</strong> — 唯一のネットワーク呼び出し（広告、IAP）はHTTPS / TLS 1.2+を使用しています。</li>
-<li><strong>最小化</strong> — 当社は、記載された目的のために必要なもののみを収集します。</li>
-</ul>
-<p>いかなるシステムも100%安全ではありません。デバイスを最新の状態に保ち、強力なデバイスロックを使用してください。</p>
-<h2>13. 広告IDとトラッキング</h2>
-<p>DeMotionはiOSでApp Tracking Transparencyフレームワークを<strong>呼び出しません</strong> — アプリによるトラッキング目的の識別子収集はありません。Unity Adsが存在する場合でも、非パーソナライズモードで動作します。</p>
-<p>Androidでは、<strong>設定 → Google → 広告</strong>で広告IDをリセットまたは制限できます。</p>
-<h2>14. アプリ内購入</h2>
-<p>DeMotionは、Apple App StoreおよびGoogle Playを通じて、プレミアム年間サブスクリプション、永久アンロック、オプションのチップジャーといったアプリ内製品を提供しています。</p>
-<p>すべての支払いデータは<strong>Apple Inc.</strong>（App Store / iTunesアカウント）または<strong>Google LLC</strong>（Play Billing）によって処理されます。お客様のカード番号、請求先住所、または完全なApple ID / Googleアカウントを当社が知ることは決してありません。AppleおよびGoogleは、機能のロック解除に使用する不透明な購入トークンと利用資格メタデータのみを返します。サブスクリプションは、iOSの設定 → Apple ID → サブスクリプション、またはGoogle Playアプリ → サブスクリプションからいつでもキャンセルできます。キャンセルルールはApple / Googleによって管理されます。</p>
-<h2>15. 本ポリシーの変更</h2>
-<p>アプリ、サードパーティSDK、または適用法が変更されるにつれて、本ポリシーを更新する場合があります。重要な変更はアプリ内でお知らせし、上部の「最終更新日」が変更されます。変更後もDeMotionの使用を継続することは、更新されたポリシーに同意したものとみなされます。</p>
-<h2>16. お問い合わせ</h2>
-<p>プライバシーに関する質問、権利の行使、または本ポリシーに関する懸念については、以下にご連絡ください。</p>
-<p><strong>Maciej Siemiński</strong> メール: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>本ポリシーの正規版: <a href="https://macsiem.github.io/demotion-privacy/">https://macsiem.github.io/demotion-privacy/</a> ソース: <a href="https://github.com/MacSiem/demotion-privacy">https://github.com/MacSiem/demotion-privacy</a></p>
-
-    <footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/demotion-privacy/">macsiem.github.io/demotion-privacy/</a></footer>
+<h1>プライバシー ポリシー — 降格</h1>
+<p>最終更新日: 2026 年 11 月 17 日。このポリシーは iOS の DeMotion に関するものです。コントローラーはMaciej Siemiński氏です。 <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> に連絡してください。</p>
+<h2>写真と現地データ</h2>
+<p>DeMotion は、PhotoKit を使用してデバイス上の Live Photos を変換します。代替の静止画像を作成し、同じ PhotoKit トランザクションで元の静止画像の削除を要求します。交換品は新しい資産です。 Apple Photos と iCloud は、システム設定に従ってアイテムを同期または保持する場合があります。 DeMotion は写真コンテンツをサーバーにアップロードしません。アプリの設定と変換履歴はデバイスに保存されます。</p>
+<h2>オプションの更新通知</h2>
+<p>更新通知を有効にして iOS で通知を許可することを選択するまで、更新通知はオフになります。アップデートを配信するために、Cloudflare Workers サービスは、ランダムなインストールデバイス ID、所有権トークンのハッシュ、Expo プッシュトークン、プラットフォーム、アプリのバージョンとビルド、ロケール、プレミアムステータス、リリースチャネル、選択されたアップデートカテゴリを Workers KV と Durable Objects に保存します。 Expo と Apple プッシュ通知サービス (APN) はメッセージを配信します。更新を無効にすると、登録の削除が要求されます。オフラインの場合、アプリは接続を使用して後続のフォアグラウンド起動で再試行します。 iOS の設定で通知の許可を制御することもできます。アプリをアンインストールしても、サーバー登録がすぐに削除されない場合があります。削除をリクエストするにはお問い合わせください。所有権ハッシュは、更新を無効にした後も個別に保持されます。</p>
+<h2>バージョン情報</h2>
+<p>通知権限とは別に、アプリはランダムなインストール ID、プラットフォーム、アプリのバージョンとビルド、リリース チャネルを Cloudflare サービスに報告し、デプロイされたバージョンを把握します。所有権トークンのハッシュは個別に保存されます。 Workers KV のバージョン レコードは、最新のレポートから 90 日後に期限切れになります。所有権のハッシュは別に保持されます。削除リクエストについては、お問い合わせください。</p>
+<h2>クラッシュ診断</h2>
+<p>Sentry は、安定性を確保するために、イベント ID、タイムスタンプ、例外タイプ、選択されたスタックとデバッグ情報、プラットフォーム、リリース、ビルド、リリース チャネル、ソース コード リビジョン (ソース SHA) など、制限付きの技術的なクラッシュおよびエラー レポートを受け取ります。このフィルターは、自由形式のエラー メッセージ、ユーザー データ、写真のコンテンツと識別子、パンくずリスト、および添付ファイルを削除します。パフォーマンス トレース、リプレイ、スクリーンショットは無効になります。ネットワーク サービス プロバイダーは接続情報を処理する場合があります。 Sentry の保持とサーバーの場所はサービス構成によって異なります。</p>
+<h2>広告と購入</h2>
+<p>無料版では Unity Ads を使用します。 Unity は、プライバシー ポリシーに基づいて、デバイスと広告の識別子 (利用可能な場合)、ネットワークと広告のインタラクション データを処理する場合があります。 iOS では、システムの App Tracking Transparency (ATT) の選択により、Apple の定義に従って追跡の許可が制御されます。アプリは広告のプライバシー設定を Unity に伝えます。 ATT の許可とデータ保護法で要求される同意は別のものです。 iOSの設定で追跡許可を変更できます。 Apple はアプリ内購入と支払い情報を処理します。 DeMotion は、支払いカード番号ではなく、購入資格情報を受け取ります。</p>
+<h2>目的と法的根拠</h2>
+<p>当社はローカル データを処理して、お客様が要求する変換を提供します。お客様のリクエストと同意に関するオプションの通知。導入されたバージョンを理解し、障害を診断するという当社の正当な利益のためのバージョン情報とクラッシュ診断。購入品をお届けするための購入情報。広告処理には、該当する法的根拠と法律で要求される許可が使用されます。以前の法的処理に影響を与えることなく、同意を撤回することができます。</p>
+<h2>受信者、保持、転送</h2>
+<p>サービスプロバイダーには、Cloudflare (通知インフラストラクチャ)、Expo と Apple (通知配信)、Sentry (クラッシュレポート)、Unity (広告)、Apple (購入) が含まれます。プロバイダーは、適用される法律に従って、他国でデータを処理する場合があります。通知登録は有効の間は保持され、無効化リクエストが成功すると削除されます。ローカル データは、システム バックアップの対象となり、削除されるかアプリが削除されるまで残ります。他のプロバイダーは、その構成とポリシーに従ってデータを保持します。保持および国際転送の保護措置の詳細については、お問い合わせください。</p>
+<p><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://expo.dev/privacy">Expo</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a></p>
+<h2>あなたの権利と連絡先</h2>
+<p>適用される法律に応じて、アクセス、修正、削除、制限、ポータビリティを要求したり、処理に異議を唱えたりすることができます。データ保護当局に苦情を申し立てることができます。ポーランドでは、個人データ保護局 (UODO) の長官です。 <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> までご連絡ください。記録を見つけたり、リクエストを確認したりするために情報が必要になる場合があります。 iOS 設定で写真、通知、追跡の権限を管理できます。</p>
+<h2>連絡先と変更点</h2>
+<p>お客様が当社にご連絡いただいた場合、当社はお客様のリクエストに応えるために送信された情報を処理します。オプションの診断の詳細は、選択した場合にのみ含まれます。当社はこのポリシーを更新する場合があり、更新日はここで公開します。</p>
+<footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/demotion-privacy/">macsiem.github.io/demotion-privacy/</a></footer>
 </div>
 </body>
 </html>

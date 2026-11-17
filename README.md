@@ -1,16 +1,5 @@
-# demotion-privacy
+# DeMotion privacy policy candidate
 
-Public privacy policy host for **DeMotion** mobile app.
-
-- 🇬🇧 [English](https://macsiem.github.io/demotion-privacy/en/)
-- 🇵🇱 [Polski](https://macsiem.github.io/demotion-privacy/pl/)
-
-Canonical Markdown source is maintained in `~/Desktop/Projects/DeMotion/privacy/privacy-policy-{en,pl}.md`. Regenerate via:
-
-```
-node -e "..."  # see git history of this repo
-```
-
-DeMotion processes Live Photo and Motion Photo files entirely on-device — nothing is uploaded.
+Static iOS privacy policy in ten languages. The pages are a release candidate; publication requires separate approval.
 
 Contact: mail@macsiem.dev

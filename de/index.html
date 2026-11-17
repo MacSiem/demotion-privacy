@@ -50,135 +50,28 @@
 <a class="active">Deutsch</a> · <a href="../en/">English</a> · <a href="../es/">Español</a> · <a href="../fr/">Français</a> · <a href="../it/">Italiano</a> · <a href="../ja/">日本語</a> · <a href="../ko/">한국어</a> · <a href="../pl/">Polski</a> · <a href="../pt/">Português (BR)</a> · <a href="../zh/">简体中文</a>
     </div>
 
-<h1>Datenschutzerklärung — DeMotion</h1>
-<p>Zuletzt aktualisiert: 2026-05-25 · Gültig ab: 2026-05-25</p>
-<h2>1. Wer wir sind</h2>
-<p><strong>DeMotion</strong> ist eine mobile App, die <strong>Live Photo (iOS)- und Motion Photo (Android)-Videokomponenten</strong> aus vorhandenen Fotos in der Fotobibliothek Ihres Geräts entfernt – direkt, wobei alle Metadaten erhalten bleiben. Datenschutz ist grundlegend: Die App läuft <strong>vollständig auf Ihrem Gerät</strong> ohne Cloud-Upload, ohne Analysen, ohne Sentry und ohne Tracking – lediglich der lokale PhotoKit / MediaStore-Zugriff ist für die Konvertierung unbedingt erforderlich.</p>
-<p><strong>Verantwortlicher:</strong> Maciej Siemiński – der Entwickler von DeMotion. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Für die über Google Play vertriebene Version der App ist der für die Datenverarbeitung Verantwortliche LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
-<p>Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten DeMotion verarbeitet, wie, warum und welche Rechte Sie haben.</p>
-<h2>2. Zusammenfassung in einfacher Sprache</h2>
-<p>DeMotion läuft vollständig auf Ihrem Gerät – Ihre Fotos verlassen Ihr Telefon nie, es gibt keine Cloud, keine Analysen, kein Sentry und kein Tracking. Wir verwenden Unity Ads für Anzeigen in der kostenlosen Version und Apple / Google Billing für In-App-Käufe. Sie haben volle DSGVO-Rechte, einschließlich Zugriff, Löschung und Portabilität.</p>
-<h2>3. Daten, die wir verarbeiten</h2>
-<h3>3.1 Nur lokal gespeicherte Daten</h3>
-<p>Die App speichert lokal auf Ihrem Gerät:</p>
-<ul>
-<li>Benutzereinstellungen (Design, Sprache, Premium-Berechtigungsstatus),</li>
-<li>einen Marker für den Abschluss des Onboardings,</li>
-<li>eine kurze Historie der letzten Stapelkonvertierungen als Metadaten: Anzahl der Elemente, Datum, insgesamt gesparte Bytes (keine Foto-spezifischen Identifikatoren, keine Miniaturansichten, keine Dateiinhalte).</li>
-</ul>
-<h3>3.3 Diagnose-SDK (Sentry)</h3>
-<p>DeMotion integriert <strong>Sentry</strong> (Sentry GmbH, Deutschland; Server in der EU) für Absturz- und Fehlerberichte. Sentry erhält: Fehler-Stack-Traces und Ausnahme-Meldungen, Navigations-Breadcrumbs (welche Bildschirme der Nutzer vor dem Fehler besucht hat), App-Version, Build-Nummer, OS-Version, Gerätemodell und Locale. Sentry erhält <strong>niemals</strong>: Foto-Inhalte, Foto-Dateipfade, Foto-Identifikatoren, Ihren Namen, Ihre E-Mail, Ihre Kontakte, Ihren Standort (außer Land/Locale) oder einen Identifikator, der zu Ihnen zurückführen könnte. Wir nutzen dies nur zur Fehlerbehebung. Datenspeicherung: 90 Tage (Sentry-Standard). Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) zur Aufrechterhaltung der App-Stabilität. Wir integrieren <strong>kein</strong> Firebase Crashlytics, Bugsnag oder andere Diagnose-SDKs. Apple App Store Connect (Crashes) und Google Play Console (Android Vitals) erhalten zusätzlich plattformseitig anonymisierte aggregierte Absturzdaten, die an die App-Version gebunden sind — unabhängig von Sentry, gemäß Apple/Google.</p>
-<h3>3.4 Werbung (Unity Ads)</h3>
-<p>DeMotion zeigt nicht-invasive Anzeigen auf den Bildschirmen Home und Ergebnis (Banner) sowie Interstitial-Anzeigen nach jeweils N Stapeln (nur in der kostenlosen Version). Anzeigen werden von <strong>Unity Ads</strong> bereitgestellt, dessen SDK Folgendes sammelt:</p>
-<ul>
-<li>die <strong>Werbe-ID</strong> (Android Advertising ID / Apple IDFA), die mit Google geteilt wird, um Anzeigen zu schalten;</li>
-<li>Diagnosedaten (Gerätemodell, länderbezogener Standort, Sprache).</li>
-</ul>
-<p>Der Standardmodus sind <strong>nicht-personalisierte Anzeigen</strong>. Auf Android steuern Sie die Werbe-ID in den Systemeinstellungen. Anzeigen können dauerhaft über den Lifetime / Premium IAP deaktiviert werden.</p>
-<h3>3.5 In-App-Käufe (IAP)</h3>
-<p>DeMotion bietet kostenpflichtige Funktionen über Apple In-App Purchase (iOS) und Google Play Billing (Android) an. Wenn Sie einen Kauf tätigen:</p>
-<ul>
-<li>Apple / Google verarbeiten alle Karten- und Kontodaten – <strong>wir sehen niemals Ihre Kartennummer, Rechnungsadresse oder vollständige Kontoinformationen</strong>;</li>
-<li>Apple / Google geben einen Kauf-Token / Transaktionsbeleg zurück, den DeMotion lokal speichert, um die Berechtigung zu validieren;</li>
-<li>Käufe wiederherstellen ruft Ihre bestehenden Berechtigungen erneut von Apple / Google ab.</li>
-</ul>
-<p>Verfügbare Produkte: Premium-Jahresabonnement, Lifetime-Freischaltung, optionales Trinkgeld.</p>
-<h3>3.6 Geräteberechtigungen</h3>
-<ul>
-<li><strong>Fotos / Medien</strong> (<code>READ_MEDIA_IMAGES</code> / <code>PHPhotoLibrary</code>): Bilder aus der Galerie hinzufügen oder verarbeiten (optional, sofern nicht für die Kernfunktion der App erforderlich).</li>
-</ul>
-<p>Jede Berechtigung wird kontextabhängig angefordert. Sie können jede Berechtigung verweigern und die Kernfunktionen (sofern zutreffend) weiterhin nutzen.</p>
-<h3>3.7 Was wir NICHT sammeln</h3>
-<ul>
-<li>Ihren Namen, E-Mail, Telefonnummer, Adresse (kein Konto erforderlich).</li>
-<li>Kontaktliste, Kalender, SMS, Anrufprotokolle.</li>
-<li>Genauen Standort.</li>
-<li>Browserverlauf außerhalb der App.</li>
-<li>Biometrische Daten (Face ID / Touch ID wird nur als systemweite Sperre verwendet und verlässt niemals Ihr Gerät).</li>
-<li>Gesundheits-, Finanz- oder Zahlungskartendaten.</li>
-</ul>
-<h2>4. Warum wir diese Daten verarbeiten (Zwecke)</h2>
-<ul>
-<li><strong>Betrieb der App auf Ihrem Gerät</strong> – lokaler Speicher und (falls vorhanden) Verschlüsselung ermöglichen die Persistenz Ihrer Daten zwischen Sitzungen.</li>
-<li><strong>Finanzierung der kostenlosen Version</strong> – Unity Ads liefert nicht-invasive Anzeigen, um Nutzer zu finanzieren, die kein Premium kaufen.</li>
-<li><strong>Verarbeitung von Käufen</strong> – Apple / Google Billing erfüllt die Premium-Berechtigungen, die Sie erwerben möchten.</li>
-</ul>
-<h2>5. Rechtsgrundlage (DSGVO Art. 6)</h2>
-<p>Für Nutzer im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz:</p>
-<ul>
-<li><strong>Vertragserfüllung</strong> (Art. 6 Abs. 1 lit. b DSGVO) – Betrieb der App, Bearbeitung Ihrer Käufe.</li>
-<li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f DSGVO) – Betrugs-/Missbrauchsverhinderung, nicht-personalisierte Werbung. Unser Interesse ist die Verbesserung der Stabilität und die Aufrechterhaltung der kostenlosen Version; dies überwiegt nicht Ihre Grundrechte.</li>
-<li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO) – personalisierte Werbung, sofern Sie die Einwilligung über die In-App-Einstellung erteilen. Sie können die Einwilligung jederzeit widerrufen, ohne die Rechtmäßigkeit der zuvor erfolgten Verarbeitung zu berühren.</li>
-<li><strong>Rechtliche Verpflichtung</strong> (Art. 6 Abs. 1 lit. c DSGVO) – nur wenn wir einer rechtmäßigen Aufforderung von Behörden nachkommen müssen.</li>
-</ul>
-<h2>6. Empfänger (mit wem wir Daten teilen)</h2>
-<p>Wir <strong>verkaufen keine</strong> personenbezogenen Daten. Die Kategorien der Empfänger sind auf Anbieter beschränkt, die für den Betrieb der App unbedingt erforderlich sind:</p>
-<table>
-<thead><tr><th>Empfänger</th><th>Zweck</th><th>Datenkategorie</th><th>Datenschutzerklärung</th></tr></thead>
-<tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Anzeigen schalten</td><td>Werbe-ID, Geräte- &amp; Anzeigenmetriken</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
-<tr><td>Apple Inc. (App Store / IAP)</td><td>Verarbeitung von In-App-Käufen unter iOS</td><td>Kauf-Token, kontoabhängige Berechtigung</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Play Billing)</td><td>Verarbeitung von In-App-Käufen unter Android</td><td>Kauf-Token, kontoabhängige Berechtigung</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-</tbody></table>
-<p>Wir können Daten offenlegen, wenn dies durch einen gültigen Gerichtsbeschluss oder ein anderes verbindliches rechtliches Verfahren erforderlich ist, nachdem wir die Anfrage überprüft und Sie, sofern rechtmäßig, benachrichtigt haben.</p>
-<h2>7. Internationale Übermittlungen</h2>
-<p>Einige der oben genannten Empfänger befinden sich außerhalb des Europäischen Wirtschaftsraums (hauptsächlich in den Vereinigten Staaten). Wo Übermittlungen stattfinden, sind diese geschützt durch:</p>
-<ul>
-<li>den <strong>Angemessenheitsbeschluss der Europäischen Kommission</strong> (EU-US Data Privacy Framework) für unter dem Framework zertifizierte Anbieter, einschließlich Google LLC;</li>
-<li><strong>Standardvertragsklauseln (SCCs)</strong>, wie von der Europäischen Kommission angenommen, ergänzt durch zusätzliche Schutzmaßnahmen, wo zutreffend;</li>
-<li>die eigenen veröffentlichten Übermittlungsmechanismen der Empfänger (z.B. Apples verbindliche unternehmensinterne Datenschutzverpflichtungen).</li>
-</ul>
-<p>Sie können eine Kopie der relevanten Schutzmaßnahmen anfordern, indem Sie an <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> schreiben.</p>
-<h2>8. Speicherdauer</h2>
-<table>
-<thead><tr><th>Daten</th><th>Wo sie gespeichert sind</th><th>Wie lange</th></tr></thead>
-<tbody>
-<tr><td>Ihre In-App-Daten</td><td>Nur auf Ihrem Gerät</td><td>Bis Sie sie löschen, die App deinstallieren oder App-Daten löschen</td></tr>
-<tr><td>Werbe-ID</td><td>Unity Ads Systeme</td><td>Gemäß der Aufbewahrungsrichtlinie von Unity</td></tr>
-<tr><td>IAP Kauf-Token / Beleg</td><td>Ihr Gerät + Apple / Google</td><td>Bis zur Deinstallation; Apple / Google bewahren Transaktionsaufzeichnungen gemäß ihren eigenen Richtlinien auf</td></tr>
-</tbody></table>
-<h2>9. Ihre Rechte (DSGVO Art. 15–22)</h2>
-<p>Sie haben die folgenden Rechte bezüglich Ihrer personenbezogenen Daten:</p>
-<ul>
-<li><strong>Auskunftsrecht (Art. 15 DSGVO)</strong> – Bestätigung, ob wir Ihre Daten verarbeiten, und eine Kopie davon. Die meisten Ihrer Daten befinden sich bereits auf Ihrem Gerät; exportieren Sie sie aus der App oder schreiben Sie uns für den Rest.</li>
-<li><strong>Recht auf Berichtigung (Art. 16 DSGVO)</strong> – Korrektur ungenauer Daten. Bearbeiten Sie Daten direkt in der App.</li>
-<li><strong>Recht auf Löschung / "Recht auf Vergessenwerden" (Art. 17 DSGVO)</strong> – Löschen Sie alle Daten über Einstellungen → "Alle Daten löschen" oder durch Deinstallation der App.</li>
-<li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</strong> – Beantragen Sie einen vorübergehenden Stopp; schreiben Sie uns.</li>
-<li><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</strong> – Einstellungen → "Daten exportieren" erstellt ein JSON / Markdown-Bundle.</li>
-<li><strong>Widerspruchsrecht (Art. 21 DSGVO)</strong> – Widerspruch gegen die Verarbeitung aufgrund berechtigten Interesses, insbesondere bei Profiling-Anzeigen. Deaktivieren Sie personalisierte Anzeigen in den App-Einstellungen oder über Systemsteuerungen.</li>
-<li><strong>Recht, nicht einer automatisierten Entscheidung unterworfen zu werden (Art. 22 DSGVO)</strong> – DeMotion trifft keine automatisierten Entscheidungen mit rechtlicher oder ähnlich erheblicher Wirkung über Sie.</li>
-</ul>
-<p>Zur Ausübung eines Rechts schreiben Sie an <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Wir antworten innerhalb von 30 Tagen (bei komplexen Anfragen mit Benachrichtigung um 60 Tage verlängerbar).</p>
-<h2>10. Beschwerderecht (DSGVO Art. 77)</h2>
-<p>Wenn Sie der Ansicht sind, dass wir Ihre Daten unrechtmäßig verarbeiten, können Sie eine Beschwerde bei einer Aufsichtsbehörde einreichen. Für polnische Einwohner:</p>
-<p><strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong> ul. Stawki 2, 00-193 Warszawa, Poland <a href="https://uodo.gov.pl">https://uodo.gov.pl</a></p>
-<p>Sie können auch eine Beschwerde bei der Aufsichtsbehörde Ihres gewöhnlichen Aufenthaltsorts, Arbeitsplatzes oder des Ortes des mutmaßlichen Verstoßes in einem anderen EWR-Land einreichen.</p>
-<h2>11. Datenschutz von Kindern</h2>
-<p>DeMotion richtet sich <strong>nicht an Kinder unter 13 Jahren</strong> (unter 16 Jahren, sofern dies nach lokalem Recht zutreffend ist). Wir sammeln wissentlich keine personenbezogenen Daten von Kindern unter diesem Alter. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten ohne elterliche Zustimmung zur Verfügung gestellt hat, kontaktieren Sie uns unter <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> und wir werden diese umgehend löschen.</p>
-<p>Die Apple / Google-Kennzeichnungen "Designed for Families" / "Ages 5+" sind bei DeMotion <strong>nicht</strong> gesetzt – die App ist für ein allgemeines Publikum ab 13 Jahren bewertet.</p>
-<h2>12. Sicherheit</h2>
-<ul>
-<li><strong>Nur In-Place-Bearbeitungen</strong> – DeMotion modifiziert Ihre vorhandenen Fotos über PhotoKit (iOS) / MediaStore (Android) APIs direkt; ursprüngliche Asset-Identifikatoren, Aufnahmedaten, Standorte, EXIF, Albumzugehörigkeit und iCloud-Synchronisationsstatus bleiben erhalten.</li>
-<li><strong>Kein Upload, keine Kopien</strong> – Ihre Fotoinhalte verlassen niemals Ihr Gerät. Es gibt keine Cloud, kein Backup, keine Analysen.</li>
-<li><strong>Transportsicherheit</strong> – die einzigen Netzwerkanrufe (Anzeigen, IAP) verwenden HTTPS / TLS 1.2+.</li>
-<li><strong>Minimierung</strong> – wir sammeln nur das, was für die aufgeführten Zwecke erforderlich ist.</li>
-</ul>
-<p>Kein System ist 100% sicher; bitte halten Sie Ihr Gerät auf dem neuesten Stand und verwenden Sie starke Gerätesperren.</p>
-<h2>13. Werbe-ID und Tracking</h2>
-<p>DeMotion ruft das App Tracking Transparency Framework unter iOS <strong>nicht</strong> auf – es erfolgt keine erfassende Identifikatoren-Sammlung durch die App. Unity Ads läuft, sofern vorhanden, im nicht-personalisierten Modus.</p>
-<p>Auf Android können Sie Ihre Werbe-ID unter <strong>Einstellungen → Google → Anzeigen</strong> zurücksetzen oder einschränken.</p>
-<h2>14. In-App-Käufe</h2>
-<p>DeMotion bietet die folgenden In-App-Produkte über den Apple App Store und Google Play an: Premium-Jahresabonnement, Lifetime-Freischaltung, optionales Trinkgeld.</p>
-<p>Alle Zahlungsdaten werden von <strong>Apple Inc.</strong> (App Store / iTunes-Konto) oder <strong>Google LLC</strong> (Play Billing) verarbeitet. Wir sehen niemals Ihre Kartennummer, Ihre Rechnungsadresse oder Ihr vollständiges Apple ID / Google-Konto. Apple und Google geben lediglich einen undurchsichtigen Kauf-Token und Berechtigungs-Metadaten zurück, die wir zum Freischalten von Funktionen verwenden. Abonnements können jederzeit in den iOS-Einstellungen → Apple ID → Abonnements oder in der Google Play App → Abonnements gekündigt werden; die Kündigungsregeln werden von Apple / Google bestimmt.</p>
-<h2>15. Änderungen an dieser Richtlinie</h2>
-<p>Wir können diese Richtlinie aktualisieren, wenn sich die App, SDKs von Drittanbietern oder geltende Gesetze ändern. Wesentliche Änderungen werden In-App bekannt gegeben und das Datum "Zuletzt aktualisiert" oben wird sich ändern. Die fortgesetzte Nutzung von DeMotion nach einer Änderung stellt die Annahme der aktualisierten Richtlinie dar.</p>
-<h2>16. Kontakt</h2>
-<p>Für Datenschutzfragen, die Ausübung von Rechten oder Bedenken bezüglich dieser Richtlinie:</p>
-<p><strong>Maciej Siemiński</strong> E-Mail: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Kanonische Version dieser Richtlinie: <a href="https://macsiem.github.io/demotion-privacy/">https://macsiem.github.io/demotion-privacy/</a> Quelle: <a href="https://github.com/MacSiem/demotion-privacy">https://github.com/MacSiem/demotion-privacy</a></p>
-
-    <footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/demotion-privacy/">macsiem.github.io/demotion-privacy/</a></footer>
+<h1>Datenschutzrichtlinie – DeMotion</h1>
+<p>Letzte Aktualisierung: 17. November 2026. Diese Richtlinie betrifft DeMotion für iOS. Der Verantwortliche ist Maciej Siemiński; Kontaktieren Sie <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>Fotos und lokale Daten</h2>
+<p>DeMotion konvertiert Live-Fotos auf Ihrem Gerät mit PhotoKit. Es erstellt ein Ersatzstandbild und fordert in derselben PhotoKit-Transaktion die Löschung des Originals an; Der Ersatz ist ein neuer Vermögenswert. Apple Fotos und iCloud können Elemente gemäß Ihren Systemeinstellungen synchronisieren oder beibehalten. DeMotion lädt keine Fotoinhalte auf seine Server hoch. App-Einstellungen und Conversion-Verlauf werden auf dem Gerät gespeichert.</p>
+<h2>Optionale Update-Benachrichtigungen</h2>
+<p>Update-Benachrichtigungen sind deaktiviert, bis Sie sie aktivieren und Benachrichtigungen in iOS zulassen. Um Updates bereitzustellen, speichert unser Cloudflare Workers-Dienst eine zufällige Installationsgeräte-ID, einen Hash eines Besitz-Tokens, einen Expo-Push-Token, Plattform, App-Version und -Build, Gebietsschema, Premium-Status, Release-Kanal und die ausgewählte Update-Kategorie in Workers KV und Durable Objects. Expo und Apple Push Notification Service (APNs) übermitteln Nachrichten. Das Deaktivieren von Updates erfordert die Entfernung der Registrierung. Wenn die App offline ist, versucht sie es bei einem späteren Start im Vordergrund mit Konnektivität erneut. Sie können die Benachrichtigungsberechtigung auch in den iOS-Einstellungen steuern. Durch die Deinstallation der App wird eine Serverregistrierung möglicherweise nicht sofort entfernt. Kontaktieren Sie uns, um die Löschung zu beantragen. Der Besitz-Hash wird nach der Deaktivierung von Updates separat aufbewahrt.</p>
+<h2>Versionsinformationen</h2>
+<p>Unabhängig von der Benachrichtigungsberechtigung meldet die App eine zufällige Installations-ID, Plattform, App-Version und Build sowie einen Release-Kanal an den Cloudflare-Dienst, um bereitgestellte Versionen zu verstehen. Ein Hash eines Eigentumstokens wird separat gespeichert. Der Versionseintrag in Workers KV läuft 90 Tage nach seinem letzten Bericht ab; Der Eigentums-Hash wird separat aufbewahrt. Kontaktieren Sie uns, um die Löschung zu beantragen.</p>
+<h2>Crash-Diagnose</h2>
+<p>Sentry erhält aus Stabilitätsgründen eingeschränkte technische Absturz- und Fehlerberichte: eine Ereignis-ID, Zeitstempel, Ausnahmetyp, ausgewählte Stack- und Debugging-Informationen, Plattform, Release, Build, Release-Kanal und Quellcode-Revision (Quell-SHA). Der Filter entfernt frei formulierte Fehlermeldungen, Benutzerdaten, Fotoinhalte und -kennungen, Breadcrumbs und Anhänge. Leistungsverfolgung, Wiedergabe und Screenshots sind deaktiviert. Netzwerkdienstanbieter können Verbindungsinformationen verarbeiten. Die Sentry-Aufbewahrung und der Serverstandort hängen von der Dienstkonfiguration ab.</p>
+<h2>Werbung und Einkäufe</h2>
+<p>Die kostenlose Version nutzt Unity Ads. Unity kann im Rahmen seiner Datenschutzrichtlinie Geräte- und Werbekennungen (sofern verfügbar) sowie Netzwerk- und Werbeinteraktionsdaten verarbeiten. Unter iOS steuert die App Tracking Transparency (ATT)-Auswahl des Systems die von Apple definierte Berechtigung für das Tracking. Die App übermittelt Werbe-Datenschutzeinstellungen an Unity. Die ATT-Erlaubnis und die datenschutzrechtlich erforderliche Einwilligung sind unterschiedlich. Sie können die Tracking-Berechtigung in den iOS-Einstellungen ändern. Apple verwaltet In-App-Käufe und Zahlungsinformationen. DeMotion erhält Informationen zur Kaufberechtigung, nicht Ihre Zahlungskartennummer.</p>
+<h2>Zwecke und Rechtsgrundlagen</h2>
+<p>Wir verarbeiten lokale Daten, um die von Ihnen gewünschte Konvertierung bereitzustellen; optionale Benachrichtigungen zu Ihrer Anfrage und Einwilligung; Versionsinformationen und Absturzdiagnose für unser berechtigtes Interesse, bereitgestellte Versionen zu verstehen und Fehler zu diagnostizieren; und Kaufinformationen, um Einkäufe auszuliefern. Die werbliche Verarbeitung erfolgt auf Grundlage der jeweils geltenden Rechtsgrundlagen und gesetzlich vorgeschriebener Erlaubnisse. Sie können Ihre Einwilligung widerrufen, ohne dass dies Auswirkungen auf eine frühere rechtmäßige Verarbeitung hat.</p>
+<h2>Empfänger, Aufbewahrung und Übermittlung</h2>
+<p>Zu den Dienstleistern gehören Cloudflare (Benachrichtigungsinfrastruktur), Expo und Apple (Benachrichtigungszustellung), Sentry (Absturzberichte), Unity (Werbung) und Apple (Käufe). Anbieter können Daten in anderen Ländern vorbehaltlich des geltenden Rechts verarbeiten. Die Benachrichtigungsregistrierung bleibt während der Aktivierung erhalten und wird bei einer erfolgreichen Deaktivierungsanforderung entfernt. Lokale Daten bleiben bis zur Löschung oder Entfernung der App erhalten, vorbehaltlich Systemsicherungen. Andere Anbieter speichern Daten gemäß ihren Konfigurationen und Richtlinien. Kontaktieren Sie uns für Einzelheiten zur Aufbewahrung und zum internationalen Transferschutz.</p>
+<p><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> · <a href="https://expo.dev/privacy">Expo</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://sentry.io/privacy/">Sentry</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a></p>
+<h2>Ihre Rechte und Kontakt</h2>
+<p>Je nach geltendem Recht können Sie Zugriff, Berichtigung, Löschung, Einschränkung, Übertragbarkeit oder Widerspruch gegen die Verarbeitung verlangen. Sie können sich bei Ihrer Datenschutzbehörde beschweren; In Polen ist dies der Präsident des Amtes für den Schutz personenbezogener Daten (UODO). Kontaktieren Sie <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Möglicherweise benötigen wir Informationen, um einen Datensatz zu finden oder eine Anfrage zu überprüfen. Sie können Foto-, Benachrichtigungs- und Tracking-Berechtigungen in den iOS-Einstellungen verwalten.</p>
+<h2>Kontakt und Änderungen</h2>
+<p>Wenn Sie mit uns Kontakt aufnehmen, verarbeiten wir die von Ihnen übermittelten Daten zur Beantwortung Ihrer Anfrage; Optionale Diagnosedetails sind nur enthalten, wenn Sie diese auswählen. Wir können diese Richtlinie aktualisieren und werden das aktualisierte Datum hier veröffentlichen.</p>
+<footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/demotion-privacy/">macsiem.github.io/demotion-privacy/</a></footer>
 </div>
 </body>
 </html>
